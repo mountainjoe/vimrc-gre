@@ -4,8 +4,10 @@
 git_bundles = [ 
   "git://github.com/scrooloose/nerdtree.git",
   "git://github.com/tpope/vim-fugitive.git",
-  # languages support
-  "git://github.com/ewiplayer/vim-scala.git"
+  "https://github.com/vim-scripts/closetag.vim.git",
+  "git://github.com/ewiplayer/vim-scala.git",
+  "git://github.com/lunaru/vim-less.git",
+  "git://github.com/tpope/vim-haml.git"
 ]
 
 vim_org_scripts = [
