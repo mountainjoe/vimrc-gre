@@ -28,3 +28,6 @@
 [submodule "bundle/coffee.vim"]
 	path = bundle/coffee.vim
 	url = git://github.com/vim-scripts/coffee.vim.git
+[submodule "bundle/vim-markdown.git"]
+	path = bundle/vim-markdown
+	url = git://github.com/tpope/vim-markdown.git
