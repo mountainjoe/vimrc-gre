@@ -28,6 +28,12 @@
 [submodule "bundle/coffee.vim"]
 	path = bundle/coffee.vim
 	url = git://github.com/vim-scripts/coffee.vim.git
-[submodule "bundle/vim-markdown.git"]
+[submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = git://github.com/tpope/vim-markdown.git
+[submodule "bundle/javacomplete"]
+	path = bundle/javacomplete
+	url = git://github.com/vim-scripts/javacomplete.git
+[submodule "bundle/css3"]
+	path = bundle/css3
+	url = git://github.com/hail2u/vim-css3-syntax.git

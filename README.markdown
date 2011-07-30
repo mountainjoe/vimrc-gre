@@ -6,9 +6,9 @@ My vimrc conf
 Keep It Simple as Stupid
 -----------------------
 
- * vimrc - the global config. `ln -s .vim/vimrc .vimrc`
- * autoload/pathogen.vim - _Manage your `runtimepath`_
- * bundle/ - containing all modules - add one with 
+ * **vimrc** is the global config. `ln -s .vim/vimrc .vimrc`
+ * **autoload/pathogen.vim** helps to _manage your `runtimepath`_
+ * **bundle/** contains all modules. add one with 
    `git submodule add {gitpath} bundle/{name}`
 
 **Enjoy!**

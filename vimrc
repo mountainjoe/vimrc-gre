@@ -113,19 +113,6 @@ if &term ==? "gnome" && has("eval")
 endif
 " }}}
 
-" {{{ Filetype plugin settings
-" Enable plugin-provided filetype settings, but only if the ftplugin
-" directory exists (which it won't on livecds, for example).
-if isdirectory(expand("$VIMRUNTIME/ftplugin"))
-  filetype plugin on
-
-  " Uncomment the next line (or copy to your ~/.vimrc) for plugin-provided
-  " indent settings. Some people don't like these, so we won't turn them on by
-  " default.
-  " filetype indent on
-endif
-" }}}
-
 " {{{ Fix &shell, see bug #101665.
 if "" == &shell
   if executable("/bin/bash")
@@ -151,6 +138,9 @@ filetype off                    " force reloading *after* pathogen loaded
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 filetype plugin indent on       " enable detection, plugins and indenting in one step
+
+filetype plugin on
+set ofu=syntaxcomplete#Complete
 "
 
 " }}}
