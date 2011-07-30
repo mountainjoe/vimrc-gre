@@ -12,15 +12,14 @@ set history=50          " keep 50 lines of command history
 set ruler               " Show the cursor position all the time
 
 set viminfo='20,\"500   " Keep a .viminfo file.
-"set expandtab		" Always use space, no tabs
-"set tabstop=4		" Control the number of space characters
-"set shiftwidth=4	" Change the number of space characters
-set incsearch       " To move the search while typing
+set expandtab		        " Always use space, no tabs
+set tabstop=2		        " Control the number of space characters
+set shiftwidth=2	      " Change the number of space characters
+set incsearch           " To move the search while typing
 set laststatus=2
 set cmdheight=2
 set backspace=2
 set nu
-set list
 
 " When doing tab completion, give the following files lower priority. You may
 " wish to set 'wildignore' to completely ignore files, and 'wildmenu' to enable
@@ -33,7 +32,13 @@ set suffixes+=.info,.aux,.log,.dvi,.bbl,.out,.o,.lo
 if v:version >= 700
   set numberwidth=3
 endif
+
 " }}}
+
+" {{{ GUI settings
+ set guioptions-=T
+ colorscheme evening
+"  }}}
 
 " {{{ Modeline settings
 " We allow modelines by default.
@@ -134,29 +139,6 @@ if has("eval")
 endif
 " }}}
 
-" {{{ Custom vimrc.local loading
-source $HOME/.vim/vimrc.local
-" }}}
-
-
-
-" {{{Lamers aliases
-command! Q quit
-command! W write
-command! Wq wq
-" }}}
-
-" {{{ Drupal settings
-if has("autocmd")
-  " Drupal *.module and *.install files.
-  augroup module
-    autocmd BufRead,BufNewFile *.module set filetype=php.drupal ts=2 sw=2 expandtab  smartindent 
-    autocmd BufRead,BufNewFile *.install set filetype=php.drupal ts=2 sw=2 expandtab smartindent 
-    autocmd BufRead,BufNewFile *.test set filetype=php.drupal ts=2 sw=2 expandtab    smartindent 
-  augroup END
-endif
-" }}}
-
 " {{{ Plugin settings
 call pathogen#runtime_append_all_bundles()
 " }}}
@@ -166,14 +148,3 @@ set undofile
 nnoremap <F5> :GundoToggle<CR>
 " }}}
 
-" {{{ Sphinx doc
-if has("autocmd")
-  "Sphinx documentation
-  " Just add " vim: ft=rst.sphinxdoc: modeline
-  augroup sphinxdoc
-    autocmd Filetype rst.sphinxdoc autocmd BufWritePost * !make -C .. html
-  augroup END
-endif
-" }}}
-
-" vim: set fenc=utf-8 tw=80 sw=2 sts=2 et foldmethod=marker :
