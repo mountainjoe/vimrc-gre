@@ -21,7 +21,6 @@ set cmdheight=2
 set backspace=2
 set nu
 
-set backupdir=$HOME/.vim/backup/
 set noswapfile
 
 " When doing tab completion, give the following files lower priority. You may
@@ -39,8 +38,10 @@ endif
 " }}}
 
 " {{{ GUI settings
- set guioptions-=T
- colorscheme evening
+if(has("gui-running"))
+  set guioptions-=T
+  colorscheme evening
+endif
 "  }}}
 
 " {{{ Modeline settings
@@ -152,10 +153,5 @@ call pathogen#runtime_append_all_bundles()
 filetype plugin indent on       " enable detection, plugins and indenting in one step
 "
 
-" }}}
-
-" {{{ Undo settings
-set undofile
-nnoremap <F5> :GundoToggle<CR>
 " }}}
 
