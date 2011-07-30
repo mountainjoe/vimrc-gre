@@ -21,6 +21,9 @@ set cmdheight=2
 set backspace=2
 set nu
 
+set backupdir=$HOME/.vim/backup/
+set noswapfile
+
 " When doing tab completion, give the following files lower priority. You may
 " wish to set 'wildignore' to completely ignore files, and 'wildmenu' to enable
 " enhanced tab completion. These can be done in the user vimrc file.

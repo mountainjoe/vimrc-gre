@@ -3,9 +3,9 @@
 
 git_bundles = [ 
   "git://github.com/scrooloose/nerdtree.git",
-  "git://github.com/tpope/vim-fugitive.git"
+  "git://github.com/tpope/vim-fugitive.git",
   # languages support
-  #  (todo)
+  "git://github.com/ewiplayer/vim-scala.git"
 ]
 
 vim_org_scripts = [
