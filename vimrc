@@ -38,7 +38,7 @@ endif
 " }}}
 
 " {{{ GUI settings
-if(has("gui-running"))
+if(has("gui_running"))
   set guioptions-=T
   colorscheme evening
 endif
