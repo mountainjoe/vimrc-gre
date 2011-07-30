@@ -4,7 +4,11 @@
 git_bundles = [ 
   "git://github.com/scrooloose/nerdtree.git",
   "git://github.com/tpope/vim-fugitive.git",
-  "https://github.com/vim-scripts/closetag.vim.git",
+  "git://github.com/vim-scripts/taglist.vim.git",
+  "git://github.com/msanders/snipmate.vim.git",
+  "git://github.com/gre/xmledit.git",
+  "git://github.com/mattn/zencoding-vim.git",
+  "git://github.com/othree/html5.vim.git",
   "git://github.com/ewiplayer/vim-scala.git",
   "git://github.com/lunaru/vim-less.git",
   "git://github.com/tpope/vim-haml.git"
