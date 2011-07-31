@@ -21,6 +21,8 @@ set cmdheight=2
 set backspace=2
 set nu
 
+set foldmethod=marker
+
 set noswapfile
 
 " When doing tab completion, give the following files lower priority. You may
