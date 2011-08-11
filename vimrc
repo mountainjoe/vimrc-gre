@@ -21,6 +21,8 @@ set cmdheight=2
 set backspace=2
 set nu
 
+set cursorline
+
 set foldmethod=marker
 
 set noswapfile
@@ -42,7 +44,7 @@ endif
 " {{{ GUI settings
 if(has("gui_running"))
   set guioptions-=T
-  colorscheme evening
+  colorscheme gredark
 endif
 "  }}}
 
