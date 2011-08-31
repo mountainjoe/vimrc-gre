@@ -22,9 +22,7 @@ set backspace=2
 set nu
 
 set cursorline
-
 set foldmethod=marker
-
 set noswapfile
 
 " When doing tab completion, give the following files lower priority. You may
@@ -38,6 +36,8 @@ set suffixes+=.info,.aux,.log,.dvi,.bbl,.out,.o,.lo
 if v:version >= 700
   set numberwidth=3
 endif
+
+nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
 
 " }}}
 
