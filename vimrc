@@ -12,14 +12,17 @@ set history=50          " keep 50 lines of command history
 set ruler               " Show the cursor position all the time
 
 set viminfo='20,\"500   " Keep a .viminfo file.
-set expandtab		        " Always use space, no tabs
-set tabstop=2		        " Control the number of space characters
-set shiftwidth=2	      " Change the number of space characters
+set expandtab           " Always use space, no tabs
+set tabstop=2           " Control the number of space characters
+set shiftwidth=2        " Change the number of space characters
 set incsearch           " To move the search while typing
 set laststatus=2
 set cmdheight=2
 set backspace=2
 set nu
+		
+set list
+set listchars=eol:¶,tab:>-,extends:»,precedes:«,trail:•,nbsp:•
 
 set cursorline
 set foldmethod=marker
@@ -44,6 +47,7 @@ nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
 " {{{ GUI settings
 if(has("gui_running"))
   set guioptions-=T
+  match SpecialChars /\s\+/
   colorscheme gredark
 endif
 "  }}}
