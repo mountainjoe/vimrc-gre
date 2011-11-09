@@ -21,9 +21,6 @@ set cmdheight=2
 set backspace=2
 set nu
 		
-set list
-set listchars=eol:¶,tab:>-,extends:»,precedes:«,trail:•,nbsp:•
-
 set cursorline
 set foldmethod=marker
 set noswapfile
