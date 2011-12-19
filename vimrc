@@ -19,10 +19,10 @@ set incsearch           " To move the search while typing
 set laststatus=2
 set cmdheight=2
 set backspace=2
+
 set nu
-		
+
 set cursorline
-set foldmethod=marker
 set noswapfile
 
 " When doing tab completion, give the following files lower priority. You may
@@ -38,17 +38,17 @@ if v:version >= 700
 endif
 
 nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
+autocmd FileType java :setlocal noexpandtab
 
 " }}}
 
 " {{{ GUI settings
 if(has("gui_running"))
   set guioptions-=T
-  match SpecialChars /\s\+/
-  colorscheme gredark
 endif
 "  }}}
 
+  colorscheme gredark
 " {{{ Modeline settings
 " We allow modelines by default.
 set modeline
@@ -146,6 +146,10 @@ filetype plugin indent on       " enable detection, plugins and indenting in one
 
 filetype plugin on
 set ofu=syntaxcomplete#Complete
+
+
+nmap <leader>t :FufFile **/<CR>
+
 "
 
 " }}}
