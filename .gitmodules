@@ -46,3 +46,6 @@
 [submodule "bundle/vim-l9"]
 	path = bundle/vim-l9
 	url = git://github.com/clones/vim-l9.git
+[submodule "bundle/play2vim"]
+	path = bundle/play2vim
+	url = git@github.com:gre/play2vim.git
