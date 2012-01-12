@@ -144,7 +144,7 @@ filetype plugin on
 set ofu=syntaxcomplete#Complete
 
 
-nmap <leader>t :FufFile **/<CR>
+nmap <leader>s :FufFile **/<CR>
 
 "
 
