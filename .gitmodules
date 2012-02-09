@@ -52,3 +52,6 @@
 [submodule "bundle/taskpaper.vim"]
 	path = bundle/taskpaper.vim
 	url = git://github.com/davidoc/taskpaper.vim.git
+[submodule "bundle/glsl.vim"]
+	path = bundle/glsl.vim
+	url = git://github.com/vim-scripts/glsl.vim.git
