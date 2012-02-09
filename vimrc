@@ -39,6 +39,7 @@ endif
 
 nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
 autocmd FileType java :setlocal noexpandtab
+au BufNewFile,BufRead *.frag,*.vert,*.fp,*.vp,*.glsl setf glsl 
 
 " }}}
 
