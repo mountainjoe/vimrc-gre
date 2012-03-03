@@ -49,11 +49,7 @@ if(has("gui_running"))
 endif
 "  }}}
 
-  colorscheme gredark
-" {{{ Modeline settings
-" We allow modelines by default.
-set modeline
-" }}}
+colorscheme gredark
 
 " {{{ Locale settings
 " Try to come up with some nice sane GUI fonts. Also try to set a sensible
