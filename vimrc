@@ -13,17 +13,21 @@ set ruler               " Show the cursor position all the time
 
 set viminfo='20,\"500   " Keep a .viminfo file.
 set expandtab           " Always use space, no tabs
-set tabstop=2           " Control the number of space characters
+set tabstop=4           " Control the number of space characters
 set shiftwidth=2        " Change the number of space characters
 set incsearch           " To move the search while typing
 set laststatus=2
-set cmdheight=2
+set cmdheight=1
 set backspace=2
 
 set nu
 
 set cursorline
 set noswapfile
+
+" Disable bells and sounds
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=
 
 " When doing tab completion, give the following files lower priority. You may
 " wish to set 'wildignore' to completely ignore files, and 'wildmenu' to enable
