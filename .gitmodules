@@ -58,3 +58,12 @@
 [submodule "bundle/autoclose"]
 	path = bundle/autoclose
 	url = git://github.com/Townk/vim-autoclose.git
+[submodule "bundle/vim-octave"]
+	path = bundle/vim-octave
+	url = git://github.com/vim-scripts/octave.vim--.git
+[submodule "bundle/vim-surround"]
+	path = bundle/vim-surround
+	url = git://github.com/tpope/vim-surround.git
+[submodule "bundle/command-t"]
+	path = bundle/command-t
+	url = git://github.com/wincent/Command-T.git
